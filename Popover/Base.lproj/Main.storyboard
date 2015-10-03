@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cov-1e-vK3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Popover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpu-Sm-Xcj">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ypg-s8-v1k"/>
+                                    <barButtonItem title="Popover 4" id="8Br-e6-thy">
+                                        <connections>
+                                            <segue destination="zeu-aG-tGC" kind="popoverPresentation" identifier="popover4" popoverAnchorBarButtonItem="8Br-e6-thy" id="TQd-uU-s2K">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JxF-Y4-hM8"/>
+                                    <barButtonItem title="Popover 5" id="mfu-rf-M8d">
+                                        <connections>
+                                            <segue destination="zeu-aG-tGC" kind="popoverPresentation" identifier="popover5" popoverAnchorBarButtonItem="mfu-rf-M8d" id="yUZ-fL-0YR">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="h1q-86-X2g"/>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-ml-GQL">
+                                <rect key="frame" x="265" y="285" width="70" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Popover 3"/>
+                                <connections>
+                                    <segue destination="zeu-aG-tGC" kind="popoverPresentation" identifier="popover3" popoverAnchorView="Iu3-ml-GQL" id="aLE-79-fac">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xpu-Sm-Xcj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6K6-MS-jxg"/>
+                            <constraint firstAttribute="trailing" secondItem="Xpu-Sm-Xcj" secondAttribute="trailing" id="Dms-jE-u8a"/>
+                            <constraint firstItem="Iu3-ml-GQL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GCo-z7-WCJ"/>
+                            <constraint firstItem="Xpu-Sm-Xcj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cZu-SM-NfG"/>
+                            <constraint firstItem="Xpu-Sm-Xcj" firstAttribute="centerX" secondItem="Iu3-ml-GQL" secondAttribute="centerX" id="e3u-Su-Ssw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="7BC-mP-JlW">
+                        <barButtonItem key="leftBarButtonItem" title="Popover 1" id="gnf-Y2-rAs">
+                            <connections>
+                                <segue destination="zeu-aG-tGC" kind="popoverPresentation" identifier="popover1" popoverAnchorBarButtonItem="gnf-Y2-rAs" id="smh-cD-a4Q">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Popover 2" id="n3R-mK-xtm">
+                            <connections>
+                                <segue destination="zeu-aG-tGC" kind="popoverPresentation" identifier="popover2" popoverAnchorBarButtonItem="n3R-mK-xtm" id="qKJ-HH-rcI">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1252" y="364"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="TUP-AH-LAX">
+            <objects>
+                <viewController id="zeu-aG-tGC" customClass="PopoverViewController" customModule="Popover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YSn-F6-eqF"/>
+                        <viewControllerLayoutGuide type="bottom" id="1UE-nD-XnX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X4Y-dr-jbY">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kS1-qJ-80i">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kS1-qJ-80i" firstAttribute="bottom" secondItem="1UE-nD-XnX" secondAttribute="top" id="dfC-H3-X6V"/>
+                            <constraint firstAttribute="trailing" secondItem="kS1-qJ-80i" secondAttribute="trailing" id="rVh-ah-0QR"/>
+                            <constraint firstItem="kS1-qJ-80i" firstAttribute="leading" secondItem="X4Y-dr-jbY" secondAttribute="leading" id="sln-Ie-Bor"/>
+                            <constraint firstItem="kS1-qJ-80i" firstAttribute="top" secondItem="YSn-F6-eqF" secondAttribute="bottom" id="vdF-hH-sEC"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="100"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="100"/>
+                    <connections>
+                        <outlet property="textView" destination="kS1-qJ-80i" id="igU-Za-oXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4GP-SF-l2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="364"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ele-HD-zeT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cov-1e-vK3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D3u-dq-zRS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wyH-5w-Xig"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdl-Ud-WeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="364"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yUZ-fL-0YR"/>
+    </inferredMetricsTieBreakers>
+</document>
